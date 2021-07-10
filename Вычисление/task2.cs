@@ -1,3 +1,5 @@
+using System; 
+
 namespace ConsoleApp1
 {
     class task2
