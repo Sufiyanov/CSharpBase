@@ -3,7 +3,7 @@ using System;
 
 namespace ConsoleApp1
 {
-    class task9
+    class task10
     {
         static void Main()
         {
