@@ -1,18 +1,18 @@
 using System;
 
-namespace Expr1
+namespace Expr2
 {
     class Program
     {
         static void Main()
         {
-            //Expr1. Как поменять местами значения двух переменных? Можно ли это сделать без ещё одной временной переменной. Стоит ли так делать?
-            int a = 1;
-            int b = 2;
-            a = a + b;
-            b = a - b;
-            a = a - b;
-            Console.WriteLine($"a = {a}, b = {b}, Менять местами переменную не стоит");
+            //Задается натуральное трехзначное число (гарантируется, что трехзначное).
+            //Развернуть его, т.е. получить трехзначное число, записанное теми же цифрами в обратном порядке.
+            int x = int.Parse(Console.ReadLine());
+            int hundred = x/100;
+            int ten = x/10%10;
+            int unit = x%10;
+            Console.WriteLine(unit*100+ten*10+hundred);
             Console.ReadKey();
         }
     }
